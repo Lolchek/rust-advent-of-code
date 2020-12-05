@@ -1,6 +1,9 @@
 use std::fs;
 use std::convert::TryInto;
 
+mod day3;
+use day3::day3code::day3;
+
 fn task1() {
     let filename = "src/day1/data/input.txt";
     let contents = fs::read_to_string(filename).expect("Something went wrong reading the file");
@@ -77,6 +80,11 @@ fn task2() {
     println!("{}", correct2);
 }
 
+fn task3(){
+    let filepath = "src/day3/data/input.txt";
+    day3(filepath);
+}
+
 fn main() {
-    task2();
+    task3();
 }
