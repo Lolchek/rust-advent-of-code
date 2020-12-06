@@ -4,6 +4,9 @@ use std::convert::TryInto;
 mod day3;
 use day3::day3code::day3;
 
+mod day4;
+use day4::src::day4;
+
 fn task1() {
     let filename = "src/day1/data/input.txt";
     let contents = fs::read_to_string(filename).expect("Something went wrong reading the file");
@@ -85,6 +88,14 @@ fn task3(){
     day3(filepath);
 }
 
+fn task4(){
+    let filepath = "src/day4/data/input.txt";
+    // let filepath = "src/day4/data/input_small_invalid.txt";
+    // let filepath = "src/day4/data/input_small_valid.txt";
+    // let filepath = "src/day4/data/input_small_mix.txt";
+    day4(filepath);
+}
+
 fn main() {
-    task3();
+    task4();
 }
