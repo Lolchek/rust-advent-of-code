@@ -7,6 +7,12 @@ use day3::day3code::day3;
 mod day4;
 use day4::src::day4;
 
+mod day5;
+use day5::src::day5;
+
+mod day7;
+use day7::src::day7;
+
 fn task1() {
     let filename = "src/day1/data/input.txt";
     let contents = fs::read_to_string(filename).expect("Something went wrong reading the file");
@@ -96,6 +102,23 @@ fn task4(){
     day4(filepath);
 }
 
+// TODO: finish this
+fn task5(){
+    let filepath = "src/day5/data/input.txt";
+    day5(filepath);
+}
+
+// TODO: finish this
+fn task6(){
+    let filepath = "src/day6/data/input.txt";
+    // day6(filepath);
+}
+
+fn task7(){
+    let filepath = "src/day7/data/input.txt";
+    day7(filepath);
+}
+
 fn main() {
-    task4();
+    task7();
 }
